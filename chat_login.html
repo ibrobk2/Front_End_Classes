@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .error-message {
+      color: #dc3545;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="mb-4">Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" required>
+        <div id="username-error" class="error-message"></div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" required>
+        <div id="password-error" class="error-message"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Reset error messages
+      document.getElementById("username-error").textContent = "";
+      document.getElementById("password-error").textContent = "";
+
+      // Validate form inputs
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username.trim() === "") {
+        document.getElementById("username-error").textContent = "Username is required.";
+      }
+
+      if (password.trim() === "") {
+        document.getElementById("password-error").textContent = "Password is required.";
+      }
+
+      // Perform further actions (e.g., submit form) if the validation passes
+      // For demonstration purposes, let's display an alert for now
+      if (username.trim() !== "" && password.trim() !== "") {
+        alert("Login successful!");
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    color: #fff;
+    background-image: url("https://source.unsplash.com/1600x900/?weather,nature");
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width: 100%;
+    min-width: 250px;
+    background-color: #000000d0;
+    margin: 0 450px;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+input{
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+button#btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+  
+}
+button#btn:hover{
+    cursor: pointer;
+}
+
+#city{
+    margin-top: 10px;
+}
+
+.details span{
+    position: absolute;
+    top: 145px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="name" placeholder="Enter your name"> -->
+    <h2 id="res">Hello</h2>
+    <button class="btn" type="button">Click</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').on('click', function(){
+               $("#res").toggle(5000);
+            } )
+        })
+    </script>
+</body>
+</html>

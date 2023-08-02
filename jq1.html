@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button class="btn" type="button">Click</button>
+    <h2 id="res"></h2>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').on('click', function(){
+                var name = $('#name').val();
+                document.getElementById('res').innerText = "Welcome, "+name;
+            } )
+        })
+    </script>
+</body>
+</html>

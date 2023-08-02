@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: black;
+    color: #fff;
+    
+}
+
+.container ul a:link{
+    color:#fff;
+    text-decoration:none;
+}
+
+.container ul a:visited{
+    color: blanchedalmond;
+}
+
+
+.container ul{
+    display: flex;
+    gap: 1rem;
+    /* padding: 10px; */
+}
+
+.container ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.container ul li:hover{
+    background-color: azure;
+    color: black;
+    /* padding: 10px; */
+    /* margin: -10px 0 -10px 0; */
+
+}
+
+.container ul a:hover{
+    color: black;
+}
